@@ -1,0 +1,63 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.grad {
+    height: 100vh;
+    background: linear-gradient(to right, white, #d5effc, #fcedf4);
+}
+.btn{
+    border-radius: 30px;
+    width: 100px;
+    margin-right: 10px;
+}
+.img-container {
+    height: 50vh;
+    float: left;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+    .img-container {
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

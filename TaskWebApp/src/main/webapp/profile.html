@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grad">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Pavan</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Logout button -->
+        <div class="d-lg-none text-right p-2">
+            <a class="nav-link" href="home.html">Logout</a>
+        </div>
+
+        <!-- Welcome Message and Task Addition Form -->
+        <div class="container">
+            <div class="jumbotron mt-5">
+                <h3 class="">Welcome, <span id="userName">User Name</span>!</h3>
+                <hr class="my-4">
+                <h2>Add a Task</h2>
+                <form id="taskForm" class="form-inline">
+                    <div class="form-group mb-2">
+                        <label for="taskName" class="sr-only">Task Name:</label>
+                        <input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task Name" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="taskPriority" class="sr-only">Priority:</label>
+                        <select class="form-control" id="taskPriority" name="taskPriority" required>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Add Task</button>
+                </form>
+            </div>
+
+            <!-- Task List -->
+            <div class="jumbotron mt-5">
+                <h2>All Tasks</h2>
+                <ul id="taskList" class="list-group">
+                    <!-- Tasks will be appended here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

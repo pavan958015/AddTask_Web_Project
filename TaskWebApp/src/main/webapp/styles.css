@@ -1,0 +1,135 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+nav {
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 300;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form button {
+    width: 100px;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+ul#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+ul#taskList li {
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#taskList li span:first-child {
+    margin-right: 1em;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-primary {
+    background-color: #007bff;
+}
+
+.badge-danger, .badge-warning, .badge-primary {
+    width: 60px;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.grad {
+    min-height: 100vh;
+    background: linear-gradient(to right, white, #d5effc, #fcedf4);
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-nav.d-lg-flex {
+        display: none;
+    }
+    .navbar-nav.d-lg-none {
+        display: flex;
+    }
+    .d-lg-none {
+        display: block !important;
+    }
+}

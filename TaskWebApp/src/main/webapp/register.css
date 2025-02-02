@@ -1,0 +1,45 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: #f8f9fa;
+}
+h1{
+    font-size: 50px;
+}
+.register-container {
+    max-width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 576px) {
+    .register-container {
+        max-width: 400px;
+    }
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.btn {
+    border-radius: 20px;
+    width: 50%;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grad {
+    height: 100vh;
+    background: linear-gradient(to right, white, #d5effc, #fcedf4);
+}
